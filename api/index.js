@@ -10,10 +10,13 @@ const PORT = process.env.PORT
 
 const app = express()
 
-app.use(express.json())
+app.use(express.json());
+
 app.use(cors({
-    origin: 'https://mern-proj-seven.vercel.app'
-}))
+  origin: 'https://mern-proj-seven.vercel.app', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true,
+}));
 
 
 // routes 
