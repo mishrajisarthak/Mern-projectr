@@ -19,8 +19,7 @@ app.use(cors({
 }));
 
 
-// routes 
-
+app.options('*', cors());
 app.use('/api/task', Taskrouter)
 
 mongoose.connect(process.env.MONGODB_CONN).then(() => {
