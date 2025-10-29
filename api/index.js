@@ -12,7 +12,7 @@ const app = express()
 
 app.use(express.json())
 app.use(cors({
-    origin: 'https://mern-projectr.vercel.app'
+    origin: 'https://mern-projectr.onrender.com'
 }))
 
 
